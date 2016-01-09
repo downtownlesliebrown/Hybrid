@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Car Fighter</title>
+  </head>
+  <body>
+    <h1>car fighter</h1>
+
+    <div>
+      <p>choose battle type:<p>
+        <label for="battle">Gas</label>
+          <input class="radio" type="radio" name="battle" value="gas">
+        <label for="battle">Cost</label>
+          <input class="radio" type="radio" name="battle" value="cost">
+    </div>
+    <div>
+      <p>
+        Estimated price per gallon of gas for 5 years:
+      </p>
+      <input id="gas-cost" type="text">
+    </div>
+    <div>
+      <p>
+        Estimated miles driven per year:
+      </p>
+      <input id="num-miles" type="text">
+    </div>
+    <div>
+      <p>
+        Hybrid
+      </p>
+      <p>
+        stats:
+      </p>
+      <div>
+        <input id="h-initial-cost" type="text" placeholder="Initial Cost">
+        <input id="h-mpg" type="text" placeholder="MPG">
+        <input id="h-resale" type="text" placeholder="Resale val in 5 yrs">
+      </div>
+    </div>
+    <div>
+      <p>
+        Normal
+      </p>
+      <p>
+        stats:
+      </p>
+      <div>
+        <input id="n-initial-cost" type="text" placeholder="Initial Cost">
+        <input id="n-mpg" type="text" placeholder="MPG">
+        <input id="n-resale" type="text" placeholder="Resale val in 5 yrs">
+      </div>
+    </div>
+    <div>
+      <button id="fight">FIGHT</button>
+    </div>
+
+    <div id="h-results">
+      <h2>Hybrid Car</h2>
+      <p>
+        Gallons of gas:
+      </p>
+      <span></span>
+      <p>
+        5 Year Cost:
+      </p>
+      <span></span>
+    </div>
+
+    <div id="n-results">
+      <h2>Normal Car</h2>
+      <p>
+        Gallons of gas:
+      </p>
+      <span></span>
+      <p>
+        5 Year Cost:
+      </p>
+      <span></span>
+    </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="hybrid2.js"></script>
+  </body>
+</html>
